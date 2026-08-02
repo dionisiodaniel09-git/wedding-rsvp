@@ -7,24 +7,31 @@
   <meta name="description" content="Wedding invitation and RSVP for Daine Cose and Rusbel Bulanan." />
   <style>
     :root {
-      --green:#0f6b4b; --green-dark:#174b38; --cream:#f8fbf4; --gold:#d7a94b;
-      --text:#20342a; --muted:#66766e; --white:rgba(255,255,255,.86);
+      --green:#5f7d42; --green-dark:#3f5f2f; --cream:#fff9dc; --gold:#d7a62a;
+      --yellow:#f7e79b; --yellow-soft:#fff3bd; --text:#4a4329; --muted:#756f55; --white:rgba(255,253,239,.88);
     }
     *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:
-      radial-gradient(circle at 10% 5%,rgba(144,238,190,.45),transparent 28%),
-      radial-gradient(circle at 95% 8%,rgba(255,218,115,.3),transparent 24%),
-      linear-gradient(180deg,#fbfff9,#f2f8ef);}
+      radial-gradient(circle at 10% 5%,rgba(255,232,128,.62),transparent 30%),
+      radial-gradient(circle at 95% 8%,rgba(166,214,143,.28),transparent 25%),
+      radial-gradient(circle at 70% 90%,rgba(255,241,179,.55),transparent 26%),
+      linear-gradient(180deg,#fffdf3,#fff7cf);}
     .wrap{max-width:1120px;margin:auto;padding:22px}.nav{display:flex;justify-content:space-between;align-items:center;background:var(--white);border:1px solid #fff;border-radius:999px;padding:13px 18px;box-shadow:0 12px 35px rgba(22,56,42,.08);backdrop-filter:blur(12px)}
     .brand{font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-size:13px}.nav a{color:var(--green-dark);text-decoration:none;font-weight:700;font-size:14px}
-    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:44px 0 22px}.badge{display:inline-block;background:var(--white);border:1px solid #dff0e6;border-radius:999px;padding:10px 15px;font-weight:700;color:var(--green)}
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:44px 0 22px}.badge{display:inline-block;background:var(--white);border:1px solid #f0df8e;border-radius:999px;padding:10px 15px;font-weight:700;color:var(--green)}
     h1{font-family:Georgia,serif;font-size:clamp(48px,7vw,82px);line-height:.98;margin:18px 0 14px;letter-spacing:-.045em}.accent{color:var(--green)}.lead{font-size:18px;line-height:1.75;color:var(--muted);max-width:650px}
-    .info-grid,.countdown{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.countdown{grid-template-columns:repeat(4,1fr)}.card{background:var(--white);border:1px solid #fff;border-radius:24px;padding:17px;box-shadow:0 12px 30px rgba(25,69,50,.08)}.label{font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:#78877f}.value{margin-top:8px;font-weight:800}.count{text-align:center}.count b{display:block;font-size:32px;color:var(--green)}
-    .visual{min-height:560px;border-radius:34px;background:
-      radial-gradient(circle at 80% 10%,rgba(59,192,126,.22),transparent 28%),
-      radial-gradient(circle at 15% 90%,rgba(240,190,70,.18),transparent 30%),
-      rgba(255,255,255,.78);border:1px solid #fff;box-shadow:0 24px 60px rgba(22,56,42,.13);padding:26px;display:flex;flex-direction:column;justify-content:space-between}
-    .visual h2{font-family:Georgia,serif;font-size:38px;margin:6px 0}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mini{background:rgba(255,255,255,.78);border:1px solid #dcefe4;border-radius:20px;padding:15px}.mini strong{color:var(--green)}.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.photo{aspect-ratio:4/5;border:2px dashed #b8ddc8;border-radius:18px;display:flex;align-items:center;justify-content:center;text-align:center;color:#718078;background:linear-gradient(135deg,#e8fff4,#fff9e8)}
-    .section{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:28px 0}.panel{background:var(--white);border:1px solid #fff;border-radius:30px;padding:25px;box-shadow:0 20px 45px rgba(22,56,42,.09)}.panel h3{font-family:Georgia,serif;font-size:34px;margin:0 0 6px}.sub{color:var(--muted);margin-bottom:20px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-weight:700;font-size:13px;margin-bottom:7px}input,select,textarea{width:100%;padding:13px 14px;border-radius:14px;border:1px solid #d7e6dc;background:#fff;font:inherit;color:var(--text)}textarea{min-height:120px;resize:vertical}.full{grid-column:1/-1}.btn{width:100%;padding:14px;border:0;border-radius:16px;background:var(--green);color:white;font-weight:800;font-size:15px;cursor:pointer}.btn:hover{background:#0b5b3f}.msg{display:none;margin-top:12px;padding:12px 14px;border-radius:14px;background:#edf9f1;color:var(--green);border:1px solid #cce8d6}.note{background:#f2faf5;border:1px solid #dbece1;border-radius:20px;padding:16px;margin-top:14px;color:#506159;line-height:1.7}.footer{text-align:center;padding:35px 10px 16px;color:#718078}
+    .info-grid,.countdown{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.countdown{grid-template-columns:repeat(4,1fr)}.card{background:var(--white);border:1px solid #fff;border-radius:24px;padding:17px;box-shadow:0 12px 30px rgba(125,102,36,.10)}.label{font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:#8b8058}.value{margin-top:8px;font-weight:800}.count{text-align:center}.count b{display:block;font-size:32px;color:var(--green)}
+    .visual{min-height:560px;border-radius:34px;position:relative;overflow:hidden;background:
+      linear-gradient(180deg,rgba(255,248,201,.10),rgba(69,76,31,.34)),
+      url('daine-rusbel-hero.png') center center/cover no-repeat;
+      border:1px solid #fff;box-shadow:0 24px 60px rgba(117,93,31,.18);padding:26px;display:flex;flex-direction:column;justify-content:space-between}
+    .visual::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,249,214,.14) 0%,rgba(35,47,24,.10) 45%,rgba(30,39,21,.68) 100%);pointer-events:none}
+    .visual>*{position:relative;z-index:1}
+    .visual-top{align-self:center;text-align:center;background:rgba(255,251,223,.58);border:1px solid rgba(255,255,255,.72);border-radius:22px;padding:14px 22px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 10px 28px rgba(46,43,23,.10);max-width:88%}
+    .visual h2{font-family:Georgia,serif;font-size:38px;margin:6px 0;color:#403a24}.visual .label{color:#75672f}
+    .photo-caption{align-self:center;text-align:center;max-width:420px;background:rgba(255,250,220,.56);border:1px solid rgba(255,255,255,.72);border-radius:22px;padding:16px 22px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 12px 30px rgba(35,37,18,.14)}
+    .photo-caption strong{display:block;color:var(--green-dark);font-family:Georgia,serif;font-size:24px;margin-bottom:5px}.photo-caption span{color:#6f6748;line-height:1.55;font-size:14px}
+    .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mini{background:rgba(255,255,255,.78);border:1px solid #eedf9e;border-radius:20px;padding:15px}.mini strong{color:var(--green)}
+    .section{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:28px 0}.panel{background:var(--white);border:1px solid #fff;border-radius:30px;padding:25px;box-shadow:0 20px 45px rgba(117,93,31,.10)}.panel h3{font-family:Georgia,serif;font-size:34px;margin:0 0 6px}.sub{color:var(--muted);margin-bottom:20px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-weight:700;font-size:13px;margin-bottom:7px}input,select,textarea{width:100%;padding:13px 14px;border-radius:14px;border:1px solid #eadb98;background:#fff;font:inherit;color:var(--text)}textarea{min-height:120px;resize:vertical}.full{grid-column:1/-1}.btn{width:100%;padding:14px;border:0;border-radius:16px;background:var(--gold);color:#40381e;font-weight:800;font-size:15px;cursor:pointer}.btn:hover{background:#c99620}.msg{display:none;margin-top:12px;padding:12px 14px;border-radius:14px;background:#fff8cf;color:#5f6f32;border:1px solid #eadb82}.note{background:#fff9dc;border:1px solid #eadf9f;border-radius:20px;padding:16px;margin-top:14px;color:#6f6748;line-height:1.7}.footer{text-align:center;padding:35px 10px 16px;color:#8b8058}
     @media(max-width:900px){.hero,.section{grid-template-columns:1fr}.visual{min-height:auto}.info-grid{grid-template-columns:1fr}.countdown{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:560px){.wrap{padding:14px}.form-grid,.mini-grid{grid-template-columns:1fr}.photos{grid-template-columns:1fr 1fr 1fr}.nav a{font-size:12px}.visual h2{font-size:31px}}
   </style>
@@ -36,7 +43,7 @@
     <section class="hero">
       <div>
         <div class="badge">✨ You are cordially invited</div>
-        <h1>Daine Cose <span class="accent">& Rusbel Bulanan</span></h1>
+        <h1>Daine & Rusbel<span class="accent"> Wedding</span></h1>
         <p class="lead">Join us as we begin our forever in a tropical celebration filled with love, warmth, and joyful memories.</p>
         <div class="info-grid">
           <div class="card"><div class="label">Date</div><div class="value">December 18, 2026</div></div>
@@ -52,17 +59,8 @@
       </div>
 
       <div class="visual">
-        <div><div class="label">Tropical Celebration</div><h2>Wedding RSVP</h2></div>
-        <div class="mini-grid">
-          <div class="mini"><strong>Ceremony</strong><br>Batangas Events and Villas • 3:00 PM</div>
-          <div class="mini"><strong>Dress Code</strong><br>Tropical elegant / light garden hues</div>
-          <div class="mini"><strong>Theme</strong><br>Fresh greens, warm golds, airy florals</div>
-          <div class="mini"><strong>Vibe</strong><br>Relaxed, romantic, and celebration-ready</div>
-        </div>
-        <div>
-          <div class="value" style="margin-bottom:12px">Photo Gallery</div>
-          <div class="photos"><div class="photo">Add photo 1</div><div class="photo">Add photo 2</div><div class="photo">Add photo 3</div></div>
-        </div>
+        <div class="visual-top"><div class="label">Tropical Celebration</div><h2>Daine & Rusbel</h2></div>
+        <div class="photo-caption"><strong>Forever begins here</strong><span>December 18, 2026 • Batangas Events and Villas</span></div>
       </div>
     </section>
 
@@ -90,7 +88,7 @@
       </div>
     </section>
 
-    <div class="footer">Made with love for Daine & Rusbel 💚</div>
+    <div class="footer">Made with love for Daine & Rusbel 💛</div>
   </div>
 
   <script>
@@ -105,7 +103,53 @@
       document.getElementById('seconds').textContent=String(s).padStart(2,'0');
     }
     updateCountdown(); setInterval(updateCountdown,1000);
-    document.getElementById('rsvpForm').addEventListener('submit',function(e){e.preventDefault();document.getElementById('successMsg').style.display='block';this.reset();});
+
+    // Paste your deployed Google Apps Script Web App URL below.
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx1b5Hcqs6qlzMJb5IFqkaJdctnHqjkDnGa6fXpXfDJ_RfbJ7ZV1LdY47kTxr_dlCE81Q/exec';
+
+    document.getElementById('rsvpForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const form = this;
+      const button = form.querySelector('button[type="submit"]');
+      const message = document.getElementById('successMsg');
+      const originalText = button.textContent;
+
+      if (!APPS_SCRIPT_URL || APPS_SCRIPT_URL.includes('PASTE_YOUR')) {
+        alert('Please add your Google Apps Script Web App URL inside index.html first.');
+        return;
+      }
+
+      button.disabled = true;
+      button.textContent = 'Sending...';
+      message.style.display = 'none';
+
+      const formData = new URLSearchParams(new FormData(form));
+      formData.append('source', 'Wedding RSVP website');
+
+      try {
+        // no-cors is required for a static GitHub Pages site calling Apps Script.
+        // A successful network request is treated as submitted.
+        await fetch(APPS_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          body: formData
+        });
+
+        message.textContent = '✅ Thank you! Your RSVP has been submitted.';
+        message.style.display = 'block';
+        form.reset();
+      } catch (error) {
+        console.error(error);
+        message.textContent = '❌ Submission failed. Please check your connection and try again.';
+        message.style.display = 'block';
+        message.style.background = '#fff1f0';
+        message.style.color = '#b42318';
+      } finally {
+        button.disabled = false;
+        button.textContent = originalText;
+      }
+    });
   </script>
 </body>
 </html>
