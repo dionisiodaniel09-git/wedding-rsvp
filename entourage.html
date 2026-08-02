@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Wedding Entourage | Dimple & Rusbel</title>
+  <meta name="description" content="The wedding entourage of Dimple and Rusbel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --deep:#34452e;
+      --ink:#50523a;
+      --paper:#fffdf8;
+      --cream:#f8f1dc;
+      --yellow:#f3d879;
+      --gold:#c8a24f;
+      --sage:#a9b993;
+      --line:rgba(126,119,78,.28);
+      --shadow:0 28px 80px rgba(59,62,40,.16);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      min-height:100svh;
+      font-family:Montserrat,Arial,sans-serif;
+      color:var(--ink);
+      background:
+        linear-gradient(rgba(255,253,248,.92),rgba(255,253,248,.97)),
+        url('dimple-rusbel-hero.png') center/cover fixed;
+      padding:34px 15px;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.3;
+      background-image:radial-gradient(rgba(95,95,65,.15) .55px,transparent .55px);
+      background-size:5px 5px;
+    }
+
+    .page{
+      position:relative;
+      width:min(960px,100%);
+      margin:auto;
+      padding:clamp(34px,7vw,76px) clamp(20px,6vw,70px);
+      background:rgba(255,253,248,.94);
+      border:1px solid rgba(255,255,255,.9);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .page::before,.page::after{
+      content:"";
+      position:absolute;
+      width:330px;
+      height:330px;
+      border-radius:50%;
+      opacity:.16;
+      background:repeating-conic-gradient(from 10deg,var(--sage) 0 10deg,transparent 11deg 25deg);
+      pointer-events:none;
+    }
+
+    .page::before{left:-210px;top:-160px}
+    .page::after{right:-220px;bottom:-170px;transform:rotate(150deg)}
+
+    .header{text-align:center;position:relative;z-index:1}
+    .eyebrow{font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;font-weight:600;color:#77785b}
+    .names{font:400 clamp(3.7rem,10vw,6.6rem) "Great Vibes",cursive;color:var(--deep);margin:12px 0 0}
+    h1{font:500 clamp(2.2rem,6vw,3.8rem) "Cormorant Garamond",serif;margin:0}
+    .intro{font:1.2rem/1.75 "Cormorant Garamond",serif;max-width:620px;margin:14px auto 0}
+    .ornament{width:130px;height:1px;background:var(--gold);margin:25px auto 38px;position:relative}
+    .ornament::after{content:"◆";position:absolute;left:50%;top:50%;transform:translate(-50%,-52%);background:var(--paper);padding:0 9px;color:var(--gold);font-size:.55rem}
+
+    .group{
+      position:relative;
+      z-index:1;
+      text-align:center;
+      padding:29px 20px;
+      border-top:1px solid var(--line);
+    }
+
+    .group:first-of-type{border-top:0}
+    .group-title{
+      margin:0 0 16px;
+      font:600 clamp(1.35rem,4vw,1.85rem) "Cormorant Garamond",serif;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+      color:var(--deep);
+    }
+
+    .people{display:flex;flex-wrap:wrap;justify-content:center;gap:9px 34px}
+    .person{font:500 clamp(1.35rem,3vw,1.7rem) "Cormorant Garamond",serif;min-width:130px}
+
+    .sponsors{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(150px,1fr));
+      max-width:560px;
+      gap:10px 30px;
+      margin:auto;
+    }
+
+    .paired-grid{
+      position:relative;
+      z-index:1;
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      border-top:1px solid var(--line);
+    }
+
+    .paired-grid .group{border-top:0}
+    .paired-grid .group + .group{border-left:1px solid var(--line)}
+
+    .small-grid{
+      position:relative;
+      z-index:1;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      border-top:1px solid var(--line);
+    }
+
+    .small-grid .group{border-top:0}
+    .small-grid .group + .group{border-left:1px solid var(--line)}
+
+    .actions{position:relative;z-index:1;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:42px}
+    .button{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border:1px solid var(--deep);text-decoration:none;font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--deep)}
+    .button.primary{background:var(--deep);color:#fff}
+    .button:hover{transform:translateY(-2px)}
+
+    @media(max-width:680px){
+      body{padding:15px}
+      .page{padding:38px 16px}
+      .paired-grid,.small-grid{grid-template-columns:1fr}
+      .paired-grid .group + .group,.small-grid .group + .group{border-left:0;border-top:1px solid var(--line)}
+      .sponsors{grid-template-columns:1fr}
+      .group{padding:25px 10px}
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div class="eyebrow">December 18, 2026</div>
+      <div class="names">Dimple & Rusbel</div>
+      <div class="ornament"></div>
+      <h1>Wedding Entourage</h1>
+      <p class="intro">With grateful hearts, we celebrate alongside the special people who will stand with us on our wedding day.</p>
+    </header>
+
+    <section class="group">
+      <h2 class="group-title">Primary Sponsors</h2>
+      <div class="sponsors">
+        <div class="person">name1</div>
+        <div class="person">name2</div>
+        <div class="person">name3</div>
+        <div class="person">name4</div>
+      </div>
+    </section>
+
+    <div class="paired-grid">
+      <section class="group">
+        <h2 class="group-title">Maid of Honor</h2>
+        <div class="people"><div class="person">Selle</div></div>
+      </section>
+      <section class="group">
+        <h2 class="group-title">Matron of Honor</h2>
+        <div class="people"><div class="person">Christine</div></div>
+      </section>
+    </div>
+
+    <section class="group">
+      <h2 class="group-title">Best Men</h2>
+      <div class="people">
+        <div class="person">NiÑo</div>
+        <div class="person">Dan</div>
+      </div>
+    </section>
+
+    <div class="paired-grid">
+      <section class="group">
+        <h2 class="group-title">Cord</h2>
+        <div class="people">
+          <div class="person">Chery</div>
+          <div class="person">Jack</div>
+        </div>
+      </section>
+      <section class="group">
+        <h2 class="group-title">Veil</h2>
+        <div class="people">
+          <div class="person">Jovy</div>
+          <div class="person">Kuya Jay</div>
+        </div>
+      </section>
+    </div>
+
+    <section class="group">
+      <h2 class="group-title">Cord</h2>
+      <div class="people">
+        <div class="person">Bea</div>
+        <div class="person">Ambo</div>
+      </div>
+    </section>
+
+    <div class="paired-grid">
+      <section class="group">
+        <h2 class="group-title">Bridemaid</h2>
+        <div class="people"><div class="person">Celine</div></div>
+      </section>
+      <section class="group">
+        <h2 class="group-title">Groomsman</h2>
+        <div class="people"><div class="person">Ya pengs</div></div>
+      </section>
+    </div>
+
+    <div class="small-grid">
+      <section class="group">
+        <h2 class="group-title">Bible Bearer</h2>
+        <div class="people"><div class="person">Ethan</div></div>
+      </section>
+      <section class="group">
+        <h2 class="group-title">Coin Bearer</h2>
+        <div class="people"><div class="person">Rylie</div></div>
+      </section>
+      <section class="group">
+        <h2 class="group-title">Ring Bearer</h2>
+        <div class="people"><div class="person">Kaden</div></div>
+      </section>
+    </div>
+
+    <nav class="actions" aria-label="Page navigation">
+      <a class="button" href="index.html">Back to Invitation</a>
+      <a class="button primary" href="rsvp.html">RSVP Now</a>
+    </nav>
+  </main>
+</body>
+</html>
