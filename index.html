@@ -3,53 +3,701 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daine & Rusbel | Wedding RSVP</title>
-  <meta name="description" content="Wedding invitation and RSVP for Daine Cose and Rusbel Bulanan." />
+  <title>Dimple & Rusbel | Wedding RSVP</title>
+  <meta name="description" content="Wedding invitation and RSVP for Dimple Cose and Rusbel Bulanan." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --green:#5f7d42; --green-dark:#3f5f2f; --cream:#fff9dc; --gold:#d7a62a;
-      --yellow:#f7e79b; --yellow-soft:#fff3bd; --text:#4a4329; --muted:#756f55; --white:rgba(255,253,239,.88);
+      --green: #5f7d42;
+      --green-dark: #3f5f2f;
+      --cream: #fff9dc;
+      --gold: #d7a62a;
+      --yellow: #f7e79b;
+      --yellow-soft: #fff3bd;
+      --text: #4a4329;
+      --muted: #756f55;
+      --white: rgba(255, 253, 239, 0.88);
     }
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:
-      radial-gradient(circle at 10% 5%,rgba(255,232,128,.62),transparent 30%),
-      radial-gradient(circle at 95% 8%,rgba(166,214,143,.28),transparent 25%),
-      radial-gradient(circle at 70% 90%,rgba(255,241,179,.55),transparent 26%),
-      linear-gradient(180deg,#fffdf3,#fff7cf);}
-    .wrap{max-width:1120px;margin:auto;padding:22px}.nav{display:flex;justify-content:space-between;align-items:center;background:var(--white);border:1px solid #fff;border-radius:999px;padding:13px 18px;box-shadow:0 12px 35px rgba(22,56,42,.08);backdrop-filter:blur(12px)}
-    .brand{font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-size:13px}.nav a{color:var(--green-dark);text-decoration:none;font-weight:700;font-size:14px}
-    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:44px 0 22px}.badge{display:inline-block;background:var(--white);border:1px solid #f0df8e;border-radius:999px;padding:10px 15px;font-weight:700;color:var(--green)}
-    h1{font-family:Georgia,serif;font-size:clamp(48px,7vw,82px);line-height:.98;margin:18px 0 14px;letter-spacing:-.045em}.accent{color:var(--green)}.lead{font-size:18px;line-height:1.75;color:var(--muted);max-width:650px}
-    .info-grid,.countdown{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.countdown{grid-template-columns:repeat(4,1fr)}.card{background:var(--white);border:1px solid #fff;border-radius:24px;padding:17px;box-shadow:0 12px 30px rgba(125,102,36,.10)}.label{font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:#8b8058}.value{margin-top:8px;font-weight:800}.count{text-align:center}.count b{display:block;font-size:32px;color:var(--green)}
-    .visual{min-height:560px;border-radius:34px;position:relative;overflow:hidden;background:
-      linear-gradient(180deg,rgba(255,248,201,.10),rgba(69,76,31,.34)),
-      url('daine-rusbel-hero.png') center center/cover no-repeat;
-      border:1px solid #fff;box-shadow:0 24px 60px rgba(117,93,31,.18);padding:26px;display:flex;flex-direction:column;justify-content:space-between}
-    .visual::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,249,214,.14) 0%,rgba(35,47,24,.10) 45%,rgba(30,39,21,.68) 100%);pointer-events:none}
-    .visual>*{position:relative;z-index:1}
-    .visual-top{align-self:center;text-align:center;background:rgba(255,251,223,.58);border:1px solid rgba(255,255,255,.72);border-radius:22px;padding:14px 22px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 10px 28px rgba(46,43,23,.10);max-width:88%}
-    .visual h2{font-family:Georgia,serif;font-size:38px;margin:6px 0;color:#403a24}.visual .label{color:#75672f}
-    .photo-caption{align-self:center;text-align:center;max-width:420px;background:rgba(255,250,220,.56);border:1px solid rgba(255,255,255,.72);border-radius:22px;padding:16px 22px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 12px 30px rgba(35,37,18,.14)}
-    .photo-caption strong{display:block;color:var(--green-dark);font-family:Georgia,serif;font-size:24px;margin-bottom:5px}.photo-caption span{color:#6f6748;line-height:1.55;font-size:14px}
-    .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mini{background:rgba(255,255,255,.78);border:1px solid #eedf9e;border-radius:20px;padding:15px}.mini strong{color:var(--green)}
-    .section{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:28px 0}.panel{background:var(--white);border:1px solid #fff;border-radius:30px;padding:25px;box-shadow:0 20px 45px rgba(117,93,31,.10)}.panel h3{font-family:Georgia,serif;font-size:34px;margin:0 0 6px}.sub{color:var(--muted);margin-bottom:20px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-weight:700;font-size:13px;margin-bottom:7px}input,select,textarea{width:100%;padding:13px 14px;border-radius:14px;border:1px solid #eadb98;background:#fff;font:inherit;color:var(--text)}textarea{min-height:120px;resize:vertical}.full{grid-column:1/-1}.btn{width:100%;padding:14px;border:0;border-radius:16px;background:var(--gold);color:#40381e;font-weight:800;font-size:15px;cursor:pointer}.btn:hover{background:#c99620}.msg{display:none;margin-top:12px;padding:12px 14px;border-radius:14px;background:#fff8cf;color:#5f6f32;border:1px solid #eadb82}.note{background:#fff9dc;border:1px solid #eadf9f;border-radius:20px;padding:16px;margin-top:14px;color:#6f6748;line-height:1.7}.footer{text-align:center;padding:35px 10px 16px;color:#8b8058}
-    @media(max-width:900px){.hero,.section{grid-template-columns:1fr}.visual{min-height:auto}.info-grid{grid-template-columns:1fr}.countdown{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:560px){.wrap{padding:14px}.form-grid,.mini-grid{grid-template-columns:1fr}.photos{grid-template-columns:1fr 1fr 1fr}.nav a{font-size:12px}.visual h2{font-size:31px}}
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 5%, rgba(255, 232, 128, 0.62), transparent 30%),
+        radial-gradient(circle at 95% 8%, rgba(166, 214, 143, 0.28), transparent 25%),
+        radial-gradient(circle at 70% 90%, rgba(255, 241, 179, 0.55), transparent 26%),
+        linear-gradient(180deg, #fffdf3, #fff7cf);
+    }
+
+    .wrap {
+      max-width: 1120px;
+      margin: auto;
+      padding: 22px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--white);
+      border: 1px solid #fff;
+      border-radius: 999px;
+      padding: 13px 18px;
+      box-shadow: 0 12px 35px rgba(22, 56, 42, 0.08);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--green);
+      font-size: 13px;
+    }
+
+    .nav a {
+      color: var(--green-dark);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 28px;
+      align-items: center;
+      padding: 44px 0 22px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--white);
+      border: 1px solid #f0df8e;
+      border-radius: 999px;
+      padding: 10px 15px;
+      font-weight: 700;
+      color: var(--green);
+    }
+
+    .main-couple-name {
+      font-family: 'Great Vibes', cursive;
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(58px, 8vw, 94px);
+      line-height: 1.05;
+      margin: 20px 0 10px;
+      color: var(--text);
+    }
+
+    .accent {
+      color: var(--green);
+    }
+
+    .lead {
+      font-size: 18px;
+      line-height: 1.75;
+      color: var(--muted);
+      max-width: 650px;
+    }
+
+    .info-grid,
+    .countdown {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .countdown {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid #fff;
+      border-radius: 24px;
+      padding: 17px;
+      box-shadow: 0 12px 30px rgba(125, 102, 36, 0.10);
+    }
+
+    .label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #8b8058;
+    }
+
+    .value {
+      margin-top: 8px;
+      font-weight: 800;
+    }
+
+    .count {
+      text-align: center;
+    }
+
+    .count b {
+      display: block;
+      font-size: 32px;
+      color: var(--green);
+    }
+
+    .visual-card {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .visual {
+      min-height: 560px;
+      border-radius: 34px;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(255, 248, 201, 0.08), rgba(69, 76, 31, 0.16)),
+        url('dimple-rusbel-hero.png') center center / cover no-repeat;
+      border: 1px solid #fff;
+      box-shadow: 0 24px 60px rgba(117, 93, 31, 0.18);
+    }
+
+    .visual::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 249, 214, 0.08) 0%,
+        rgba(35, 47, 24, 0.03) 55%,
+        rgba(30, 39, 21, 0.18) 100%
+      );
+      pointer-events: none;
+    }
+
+    .visual-top,
+    .photo-caption {
+      text-align: center;
+      background: rgba(255, 251, 223, 0.56);
+      border: 1px solid rgba(255, 255, 255, 0.76);
+      border-radius: 22px;
+      padding: 16px 22px;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 12px 30px rgba(46, 43, 23, 0.12);
+    }
+
+    .visual-top {
+      position: absolute;
+      top: 34px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(88%, 520px);
+      z-index: 2;
+    }
+
+    .photo-caption {
+      position: absolute;
+      bottom: 34px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(82%, 440px);
+      z-index: 2;
+    }
+
+    .hero-couple-name {
+      font-family: 'Great Vibes', cursive;
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(46px, 6vw, 72px);
+      line-height: 1;
+      margin: 8px 0 0;
+      color: #403a24;
+    }
+
+    .visual-top .label {
+      color: #75672f;
+    }
+
+    .photo-caption strong {
+      display: block;
+      color: var(--green-dark);
+      font-family: Georgia, serif;
+      font-size: 28px;
+      margin-bottom: 7px;
+    }
+
+    .photo-caption span {
+      color: #6f6748;
+      line-height: 1.55;
+      font-size: 15px;
+    }
+
+    .section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 28px 0;
+    }
+
+    .panel {
+      background: var(--white);
+      border: 1px solid #fff;
+      border-radius: 30px;
+      padding: 25px;
+      box-shadow: 0 20px 45px rgba(117, 93, 31, 0.10);
+    }
+
+    .panel h3 {
+      font-family: Georgia, serif;
+      font-size: 34px;
+      margin: 0 0 6px;
+    }
+
+    .sub {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 7px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border-radius: 14px;
+      border: 1px solid #eadb98;
+      background: #fff;
+      font: inherit;
+      color: var(--text);
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .full {
+      grid-column: 1 / -1;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 14px;
+      border: 0;
+      border-radius: 16px;
+      background: var(--gold);
+      color: #40381e;
+      font-weight: 800;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #c99620;
+    }
+
+    .btn:disabled {
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+
+    .msg {
+      display: none;
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: #fff8cf;
+      color: #5f6f32;
+      border: 1px solid #eadb82;
+    }
+
+    .note,
+    .mini {
+      background: #fff9dc;
+      border: 1px solid #eadf9f;
+      border-radius: 20px;
+      padding: 16px;
+      margin-top: 14px;
+      color: #6f6748;
+      line-height: 1.7;
+    }
+
+    .mini {
+      margin-top: 0;
+    }
+
+    .mini strong {
+      color: var(--green);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 35px 10px 16px;
+      color: #8b8058;
+    }
+
+
+    /* Additional wedding sections */
+    .section-block {
+      margin: 34px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    .section-heading .eyebrow {
+      display: block;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .section-heading h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(34px, 5vw, 50px);
+      margin: 0;
+      color: var(--text);
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      max-width: 680px;
+      margin: 10px auto 0;
+      line-height: 1.7;
+    }
+
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .schedule-item {
+      position: relative;
+      text-align: center;
+      background: var(--white);
+      border: 1px solid #fff;
+      border-radius: 24px;
+      padding: 22px 16px;
+      box-shadow: 0 14px 34px rgba(117, 93, 31, 0.10);
+    }
+
+    .schedule-time {
+      display: inline-block;
+      color: var(--green-dark);
+      background: var(--yellow-soft);
+      border: 1px solid #eadb98;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .schedule-item h4 {
+      font-family: Georgia, serif;
+      font-size: 22px;
+      margin: 0 0 8px;
+    }
+
+    .schedule-item p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .gallery-placeholder {
+      min-height: 230px;
+      border-radius: 24px;
+      border: 2px dashed #dccb7b;
+      background:
+        linear-gradient(135deg, rgba(255, 243, 189, 0.88), rgba(255, 253, 239, 0.92)),
+        radial-gradient(circle at 20% 15%, rgba(166, 214, 143, 0.24), transparent 34%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 22px;
+      color: #7a704c;
+      box-shadow: 0 12px 30px rgba(117, 93, 31, 0.08);
+    }
+
+    .gallery-placeholder .icon {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .gallery-placeholder strong {
+      color: var(--green-dark);
+      margin-bottom: 5px;
+    }
+
+    .map-card {
+      overflow: hidden;
+      border-radius: 30px;
+      border: 1px solid #fff;
+      background: var(--white);
+      box-shadow: 0 20px 45px rgba(117, 93, 31, 0.10);
+    }
+
+    .map-frame {
+      width: 100%;
+      height: 420px;
+      border: 0;
+      display: block;
+    }
+
+    .map-details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 20px 22px;
+    }
+
+    .map-details strong {
+      display: block;
+      font-family: Georgia, serif;
+      font-size: 24px;
+      color: var(--green-dark);
+      margin-bottom: 4px;
+    }
+
+    .map-details span {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .map-link {
+      flex: 0 0 auto;
+      display: inline-block;
+      text-decoration: none;
+      background: var(--gold);
+      color: #40381e;
+      font-weight: 800;
+      border-radius: 16px;
+      padding: 12px 16px;
+    }
+
+    .dress-code-card {
+      background: var(--white);
+      border: 1px solid #fff;
+      border-radius: 30px;
+      padding: 18px;
+      box-shadow: 0 20px 45px rgba(117, 93, 31, 0.10);
+    }
+
+    .dress-code-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 22px;
+    }
+
+    .dress-code-note {
+      margin-top: 16px;
+      text-align: center;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .section {
+        grid-template-columns: 1fr;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .countdown {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .visual {
+        min-height: 540px;
+      }
+
+      .schedule-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Mobile/tablet: keep all text cards completely outside the photo. */
+    @media (max-width: 768px) {
+      .wrap {
+        padding: 14px;
+      }
+
+      .nav a {
+        font-size: 12px;
+      }
+
+      .hero {
+        padding-top: 28px;
+      }
+
+      .main-couple-name {
+        font-size: 58px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .visual-card {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .visual {
+        position: relative;
+        order: 2;
+        width: 100%;
+        min-height: 480px;
+        background-position: center top;
+        border-radius: 28px;
+        overflow: hidden;
+      }
+
+      .visual-top,
+      .photo-caption {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        transform: none !important;
+        inset: auto !important;
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 16px 18px;
+        background: rgba(255, 251, 223, 0.72);
+        border-radius: 24px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+
+      .visual-top {
+        order: 1;
+      }
+
+      .photo-caption {
+        order: 3;
+      }
+
+      .hero-couple-name {
+        font-size: 52px;
+      }
+
+      .photo-caption strong {
+        font-size: 26px;
+      }
+
+      .schedule-grid,
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .map-frame {
+        height: 340px;
+      }
+
+      .map-details {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .map-link {
+        width: 100%;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <nav class="nav"><div class="brand">Tropical Vows</div><a href="#rsvp">RSVP Now</a></nav>
+    <nav class="nav">
+      <div class="brand">Tropical Vows</div>
+      <div style="display:flex; gap:14px; align-items:center; flex-wrap:wrap; justify-content:flex-end;">
+        <a href="#schedule">Schedule</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#dress-code">Dress Code</a>
+        <a href="#map">Map</a>
+        <a href="#rsvp">RSVP Now</a>
+      </div>
+    </nav>
 
     <section class="hero">
       <div>
         <div class="badge">✨ You are cordially invited</div>
-        <h1>Daine & Rusbel<span class="accent"> Wedding</span></h1>
-        <p class="lead">Join us as we begin our forever in a tropical celebration filled with love, warmth, and joyful memories.</p>
+        <h1 class="main-couple-name">
+          Dimple <span class="accent">& Rusbel</span>
+        </h1>
+        <p class="lead">
+          Join us as we begin our forever in a tropical celebration filled with love, warmth, and joyful memories.
+        </p>
+
         <div class="info-grid">
-          <div class="card"><div class="label">Date</div><div class="value">December 18, 2026</div></div>
-          <div class="card"><div class="label">Venue</div><div class="value">Batangas Events and Villas</div></div>
-          <div class="card"><div class="label">Time</div><div class="value">3:00 PM</div></div>
+          <div class="card">
+            <div class="label">Date</div>
+            <div class="value">December 18, 2026</div>
+          </div>
+          <div class="card">
+            <div class="label">Venue</div>
+            <div class="value">Batangas Events and Villas</div>
+          </div>
+          <div class="card">
+            <div class="label">Time</div>
+            <div class="value">3:00 PM</div>
+          </div>
         </div>
+
         <div class="countdown">
           <div class="card count"><b id="days">00</b><span class="label">Days</span></div>
           <div class="card count"><b id="hours">00</b><span class="label">Hours</span></div>
@@ -58,57 +706,206 @@
         </div>
       </div>
 
-      <div class="visual">
-        <div class="visual-top"><div class="label">Tropical Celebration</div><h2>Daine & Rusbel</h2></div>
-        <div class="photo-caption"><strong>Forever begins here</strong><span>December 18, 2026 • Batangas Events and Villas</span></div>
+      <div class="visual-card">
+
+        <div class="visual" role="img" aria-label="Dimple and Rusbel in a tropical field"></div>
+
+      
       </div>
     </section>
 
     <section class="section" id="rsvp">
       <div class="panel">
-        <h3>RSVP</h3><div class="sub">Let us know if you can celebrate with us.</div>
+        <h3>RSVP</h3>
+        <div class="sub">Let us know if you can celebrate with us.</div>
+
         <form id="rsvpForm">
           <div class="form-grid">
-            <div><label>Full Name</label><input name="fullName" required placeholder="Your name"></div>
-            <div><label>Email</label><input type="email" name="email" required placeholder="you@example.com"></div>
-            <div><label>Will you attend?</label><select name="attendance"><option>Joyfully attending</option><option>Regretfully unable</option></select></div>
-            <div><label>Number of Guests</label><input type="number" name="guestCount" min="1" max="10" value="1"></div>
-            <div class="full"><label>Message</label><textarea name="message" placeholder="Send us a note, prayer, or kind wishes"></textarea></div>
-            <div class="full"><button class="btn" type="submit">Submit RSVP</button></div>
+            <div>
+              <label for="fullName">Full Name</label>
+              <input id="fullName" name="fullName" required placeholder="Your name" />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" required placeholder="you@example.com" />
+            </div>
+
+            <div>
+              <label for="attendance">Will you attend?</label>
+              <select id="attendance" name="attendance">
+                <option>Joyfully attending</option>
+                <option>Regretfully unable</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="guestCount">Number of Guests</label>
+              <input id="guestCount" type="number" name="guestCount" min="1" max="10" value="1" />
+            </div>
+
+            <div class="full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Send us a note, prayer, or kind wishes"></textarea>
+            </div>
+
+            <div class="full">
+              <button class="btn" type="submit">Submit RSVP</button>
+            </div>
           </div>
-          <div class="msg" id="successMsg">✅ Thank you! Your RSVP has been recorded in this browser demo.</div>
+
+          <div class="msg" id="successMsg"></div>
         </form>
       </div>
 
       <div class="panel">
-        <h3>Event Details</h3><div class="sub">Batangas Events and Villas</div>
-        <div class="mini"><strong>Ceremony</strong><br>December 18, 2026 at 3:00 PM</div>
-        <div class="note"><strong>Please arrive early.</strong><br>We recommend arriving 20–30 minutes before the ceremony so everyone can be seated comfortably.</div>
-        <div class="note"><strong>Our Story</strong><br>From shared moments to shared dreams, this day marks the beginning of a lifetime of love, laughter, and adventure together.</div>
+        <h3>Event Details</h3>
+        <div class="sub">Batangas Events and Villas</div>
+
+        <div class="mini">
+          <strong>Ceremony</strong><br />
+          December 18, 2026 at 3:00 PM
+        </div>
+
+        <div class="note">
+          <strong>Please arrive early.</strong><br />
+          We recommend arriving 20–30 minutes before the ceremony so everyone can be seated comfortably.
+        </div>
+
+        <div class="note">
+          <strong>Our Story</strong><br />
+          From shared moments to shared dreams, this day marks the beginning of a lifetime of love, laughter, and adventure together.
+        </div>
       </div>
     </section>
 
-    <div class="footer">Made with love for Daine & Rusbel 💛</div>
+
+    <section class="section-block" id="schedule">
+      <div class="section-heading">
+        <span class="eyebrow">Wedding Day</span>
+        <h2>Schedule</h2>
+        <p>A simple guide to the celebration. Please arrive early so everyone can be seated before the ceremony begins.</p>
+      </div>
+
+      <div class="schedule-grid">
+        <article class="schedule-item">
+          <div class="schedule-time">2:30 PM</div>
+          <h4>Guest Arrival</h4>
+          <p>Welcome, registration, and seating at the ceremony venue.</p>
+        </article>
+
+        <article class="schedule-item">
+          <div class="schedule-time">3:00 PM</div>
+          <h4>Ceremony</h4>
+          <p>Dimple and Rusbel exchange vows surrounded by family and friends.</p>
+        </article>
+
+        <article class="schedule-item">
+          <div class="schedule-time">4:30 PM</div>
+          <h4>Photos & Cocktails</h4>
+          <p>Family portraits, couple photos, refreshments, and light conversations.</p>
+        </article>
+
+        <article class="schedule-item">
+          <div class="schedule-time">5:30 PM</div>
+          <h4>Reception</h4>
+          <p>Dinner, speeches, cake cutting, music, and celebration.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block" id="gallery">
+      <div class="section-heading">
+        <span class="eyebrow">Captured Moments</span>
+        <h2>Gallery</h2>
+        <p>Replace these placeholders with your favorite engagement and pre-wedding photos.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-placeholder"><span class="icon">📷</span><strong>Photo 1</strong><span>Engagement portrait</span></div>
+        <div class="gallery-placeholder"><span class="icon">🌿</span><strong>Photo 2</strong><span>Tropical outdoor moment</span></div>
+        <div class="gallery-placeholder"><span class="icon">💛</span><strong>Photo 3</strong><span>Pastel-yellow theme</span></div>
+        <div class="gallery-placeholder"><span class="icon">🌺</span><strong>Photo 4</strong><span>Floral detail</span></div>
+        <div class="gallery-placeholder"><span class="icon">✨</span><strong>Photo 5</strong><span>Candid celebration</span></div>
+        <div class="gallery-placeholder"><span class="icon">💍</span><strong>Photo 6</strong><span>Ring and invitation details</span></div>
+      </div>
+    </section>
+
+    <section class="section-block" id="dress-code">
+      <div class="section-heading">
+        <span class="eyebrow">Attire Guide</span>
+        <h2>Dress Code</h2>
+        <p>Tropical pastel yellow: light, fresh, romantic, and elegant.</p>
+      </div>
+
+      <div class="dress-code-card">
+        <img src="dress-code-pastel-yellow.png" alt="Tropical pastel yellow wedding dress palette for men and women" />
+        <div class="dress-code-note">
+          Suggested colors include cream, pastel yellow, peach blush, sage green, sand beige, ivory, and light taupe.
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block" id="map">
+      <div class="section-heading">
+        <span class="eyebrow">Find the Venue</span>
+        <h2>Map</h2>
+        <p>Batangas Events and Villas. Please check your preferred navigation app before traveling.</p>
+      </div>
+
+      <div class="map-card">
+        <iframe
+          class="map-frame"
+          title="Map to Batangas Events and Villas"
+          src="https://www.google.com/maps?q=Batangas%20Events%20and%20Villas&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+        <div class="map-details">
+          <div>
+            <strong>Batangas Events and Villas</strong>
+            <span>Wedding ceremony and reception venue</span>
+          </div>
+          <a
+            class="map-link"
+            href="https://www.google.com/maps/search/?api=1&query=Batangas%20Events%20and%20Villas"
+            target="_blank"
+            rel="noopener noreferrer">
+            Open in Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">Made with love for Dimple & Rusbel 💛</div>
   </div>
 
   <script>
     const weddingDate = new Date('2026-12-18T15:00:00+08:00').getTime();
-    function updateCountdown(){
+
+    function updateCountdown() {
       const diff = Math.max(0, weddingDate - Date.now());
-      const total = Math.floor(diff/1000);
-      const d = Math.floor(total/86400), h = Math.floor((total%86400)/3600), m = Math.floor((total%3600)/60), s = total%60;
-      document.getElementById('days').textContent=String(d).padStart(2,'0');
-      document.getElementById('hours').textContent=String(h).padStart(2,'0');
-      document.getElementById('minutes').textContent=String(m).padStart(2,'0');
-      document.getElementById('seconds').textContent=String(s).padStart(2,'0');
+      const total = Math.floor(diff / 1000);
+      const days = Math.floor(total / 86400);
+      const hours = Math.floor((total % 86400) / 3600);
+      const minutes = Math.floor((total % 3600) / 60);
+      const seconds = total % 60;
+
+      document.getElementById('days').textContent = String(days).padStart(2, '0');
+      document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
     }
-    updateCountdown(); setInterval(updateCountdown,1000);
 
-    // Paste your deployed Google Apps Script Web App URL below.
-    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx1b5Hcqs6qlzMJb5IFqkaJdctnHqjkDnGa6fXpXfDJ_RfbJ7ZV1LdY47kTxr_dlCE81Q/exec';
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
 
-    document.getElementById('rsvpForm').addEventListener('submit', async function(e) {
-      e.preventDefault();
+    // Replace this value with your deployed Google Apps Script Web App URL.
+    const APPS_SCRIPT_URL = 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+
+    document.getElementById('rsvpForm').addEventListener('submit', async function (event) {
+      event.preventDefault();
 
       const form = this;
       const button = form.querySelector('button[type="submit"]');
@@ -128,8 +925,6 @@
       formData.append('source', 'Wedding RSVP website');
 
       try {
-        // no-cors is required for a static GitHub Pages site calling Apps Script.
-        // A successful network request is treated as submitted.
         await fetch(APPS_SCRIPT_URL, {
           method: 'POST',
           mode: 'no-cors',
@@ -138,6 +933,8 @@
 
         message.textContent = '✅ Thank you! Your RSVP has been submitted.';
         message.style.display = 'block';
+        message.style.background = '#fff8cf';
+        message.style.color = '#5f6f32';
         form.reset();
       } catch (error) {
         console.error(error);
